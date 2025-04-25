@@ -1,1 +1,5 @@
+# collecting all the data
 
+I had to update my Shiny app to work with data from multiple students, not just my own. I changed the code so it could read both .csv and .xlsx files directly from GitHub. Each student had slightly different data, so I had to clean and standardize everything into a consistent format using R. I also added new logic to handle missing columns, renamed data to match, and made sure all datasets included init_speed, final_speed, speed_change, and vehicle_type.
+
+The biggest challenge was that everyone collected and named their data differently. Some only had one speed column, some used car brands instead of types, and others had number codes for vehicles. I had to write code to clean all that up and combine it into one dataset. Because of the differences, I had to redo some charts, especially the ones grouped by vehicle type, so they wouldn’t show duplicates.Through this process, I learned that collecting data can be messy, and it’s important to plan for differences and clean the data before you can really use it.
