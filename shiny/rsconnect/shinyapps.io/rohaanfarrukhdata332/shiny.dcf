@@ -1,0 +1,12 @@
+name: shiny
+title:
+username: rohaanfarrukhdata332
+account: rohaanfarrukhdata332
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14542121
+bundleId: 10127942
+url: https://rohaanfarrukhdata332.shinyapps.io/shiny/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
