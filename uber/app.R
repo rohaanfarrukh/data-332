@@ -1,4 +1,4 @@
-# 1. Load required libraries
+
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -6,24 +6,14 @@ library(lubridate)
 library(readr)
 library(leaflet)
 library(rsconnect)
-# 2. Set your working directory (edit this path to match your machine)
-# <-- CHANGE THIS to your folder path
-
-# Load libraries
-library(shiny)
-library(ggplot2)
-library(dplyr)
-library(lubridate)
-library(readr)
-library(leaflet)
 library(DT)
 
-# Load and clean data
+
 files <- list.files(pattern = "uber-raw-data-.*14.csv", full.names = TRUE)
 uber_data <- files %>%
   lapply(read_csv) %>%
   bind_rows() %>%
-  slice_sample(n = 100000) %>%  # ⬅️ only load 100k rows to reduce memory
+  slice_sample(n = 100000) %>%  
   rename(datetime = `Date/Time`) %>%
   mutate(
     datetime = mdy_hms(datetime),
